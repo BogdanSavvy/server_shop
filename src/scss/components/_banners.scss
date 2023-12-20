@@ -10,7 +10,6 @@
 
   &__list {
     display: flex;
-
     @include md {
       flex-wrap: wrap;
     }
@@ -48,15 +47,33 @@
   }
 
   &--midseason {
-    background-image: url("../img/midseason.jpg");
+    background-image: url("../img/server_3.png");
+    object-fit: contain;
+    background-position: 200px ;
+    background-size: 400px;
+    @include lg{
+      background-position: 100px 10px;
+    }
   }
 
   &--summer {
-    background-image: url("../img/summer.jpg");
+    background-image: url("../img/cpu_box_4.png");
+    background-position: 300px 0px;
+    background-size: 300px;
+    @include lg{
+      background-position: 180px 60px;
+      background-size: 250px;
+    }
   }
 
   &--accs {
-    background-image: url("../img/accs.jpg");
+    background-image: url("../img/ozu_1.png");
+    background-position: 250px 90px;
+    background-size: 350px;
+    @include lg{
+      background-position: 180px 150px;
+      background-size: 250px;
+    }
   }
 
   @include md {

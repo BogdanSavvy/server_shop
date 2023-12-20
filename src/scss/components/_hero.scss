@@ -51,6 +51,7 @@
 		width: 80%;
 		max-height: 90%;
 		object-fit: contain;
+		overflow: hidden;
 
 		@include md {
 			right: 0;
@@ -72,11 +73,13 @@
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
-		padding: 0 260px;
+		padding: 0 200px;
 		height: 100%;
 
+		padding: 0;
+
 		@include lg {
-			padding: 0 100px;
+			padding: 0 70px;
 		}
 
 		@include md {
@@ -91,6 +94,20 @@
 	@include md {
 		height: 600px;
 		min-height: auto;
+	}
+
+	.swiper-btn-next,
+	.swiper-btn-prev {
+		color: #000;
+		top: 95%;
+		
+
+		@include sm {
+			display: none;
+		}
+	}
+	.swiper-btn-prev {
+		
 	}
 }
 

@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
-
+    gap: 2px;
     @include xs {
       flex-direction: column;
     }
@@ -21,12 +21,11 @@
   padding: 50px;
   width: 50%;
   min-height: 420px;
-  color: var(--color-white);
+  color: #fff;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--color-dark);
-
   &::before {
     content: "";
     position: absolute;
@@ -34,7 +33,13 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: rgba(#d70808, 0.1);
+    background-color: rgba(#000000, 0.2);
+    transition: all ease 0.2s;
+  }
+  &:hover{
+    &::before{
+      background-color: rgba(#000000, 0.4);
+    }
   }
 
   &__title {
@@ -61,11 +66,17 @@
   }
 
   &--men {
-    background-image: url("../img/banner-1.jpg");
+    background-color: transparent;
+    background-image: url("../img/server_4.png");
+    background-size: contain;
+    background-position: 220px 0px;
   }
 
   &--women {
-    background-image: url("../img/banner-2.jpg");
+    background-color: transparent;
+    background-image: url("../img/komplekt_1.png");
+    background-size: cover;
+    background-position: 100px 0;
   }
 
   @include md {
