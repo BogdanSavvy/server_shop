@@ -384,6 +384,7 @@
   position: relative;
   min-width: 115px;
   user-select: none;
+  z-index: 50;
 
   &__dropdown {
     position: absolute;

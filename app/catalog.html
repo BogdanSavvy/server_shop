@@ -1,100 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="theme-color" content="#111111">
-	<title>New site</title>
-	<link rel="stylesheet" href="css/main.min.css">
-</head>
-<body>
-	<div class="site-container">
-    <div class="free-delivery">
-      Free delivery from $60 and free returns
-      <button class="free-delivery__btn btn-reset">
-        <svg class="">
-          <use xlink:href="img/sprite.svg#close"></use>
-        </svg>
-      </button>
-    </div>
-    <header class="header catalog-header">
-  <div class="container header__container container-narrow">
-    <button class="burger btn-reset header__burger">
-      <span class="burger__line"></span>
-    </button>
-    <nav class="nav header__nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="/" class="main-link nav__link">Home</a></li>
-        <li class="nav__item"><a href="/" class="main-link nav__link">Shop</a></li>
-        <li class="nav__item"><a class="main-link nav__link nav__link--current">Elements</a></li>
-        <li class="nav__item"><a href="/" class="main-link nav__link">Blog</a></li>
-        <li class="nav__item"><a href="/" class="main-link nav__link">Page</a></li>
-      </ul>
-      <button class="nav__close btn-reset">close</button>
-    </nav>
-    <a href="/" class="logo header__logo" aria-label="logo">
-      <svg>
-        <use xlink:href="img/sprite.svg#logo"></use>
-      </svg>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="theme-color" content="#111111" />
+		<title>SSphere - catalog</title>
+		<link rel="stylesheet" href="css/main.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+	</head>
+	<body>
+		<div class="site-container">
+			<header class="header">
+	<div class="container header__container">
+		<button class="burger btn-reset header__burger">
+			<span class="burger__line"></span>
+		</button>
+		<nav class="nav header__nav">
+			<ul class="nav__list">
+				<li class="nav__item">
+					<a href="/" class="main-link nav__link">Головна</a>
+				</li>
+				<li class="nav__item">
+					<a href="/catalog.html" class="main-link nav__link">Каталог</a>
+				</li>
+			</ul>
+			<button class="nav__close btn-reset">close</button>
+		</nav>
+		<a href="/" class="logo header__logo" aria-label="logo">
+      <img src="../img/logo.png" alt="LOGO">
     </a>
-    <ul class="shop-nav header__shop-nav">
-      <li class="shop-nav__item">
-        <form action="#" class="shop-nav__search-form search-form">
-          <button class="search-form__btn btn-reset" aria-label="Find"></button>
-        </form>
-      </li>
-      <li class="shop-nav__item">
-        <a href="/" class="shop-nav__link shop-nav__link--user" aria-label="Go to cabinet"></a>
-      </li>
-      <li class="shop-nav__item">
-        <a href="/card.html" class="shop-nav__link cart" aria-label="Go to cart">
-          <span class="cart__icon"></span>
-          <span class="cart__quantity quantity">3</span>
-        </a>
-      </li>
-    </ul>
-  </div>
+		<ul class="shop-nav header__shop-nav">
+			<li class="shop-nav__item">
+				<form action="#" class="shop-nav__search-form search-form">
+					<button class="search-form__btn btn-reset" aria-label="Find"></button>
+				</form>
+			</li>
+			<li class="shop-nav__item">
+				<a
+					href="/"
+					class="shop-nav__link shop-nav__link--user"
+					aria-label="Go to cabinet"
+				></a>
+			</li>
+			<li class="shop-nav__item">
+				<a
+					href="/card.html"
+					class="shop-nav__link cart"
+					aria-label="Go to cart"
+				>
+					<span class="cart__icon"></span>
+					<span class="cart__quantity quantity">0</span>
+				</a>
+			</li>
+		</ul>
+	</div>
 </header>
 
-    <main class="main">
-      <div class="hero-catalog">
-  <div class="container container-narrow hero-catalog__container">
-    <div class="hero-catalog__slider">
-      <button class="hero-prev-btn btn-reset">
-        <svg class="">
-          <use xlink:href="img/sprite.svg#prev-arrow"></use>
-        </svg>
-      </button>
-      <button class="hero-next-btn btn-reset">
-        <svg class="">
-          <use xlink:href="img/sprite.svg#next-arrow"></use>
-        </svg>
-      </button>
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="catalog-slide">
-            <h2 class="catalog-slide__title">The best thing about going back to school?</h2>
-            <p class="catalog-slide__descr">This fall denim is king! Denim is officially back in and cool to wear in all
-              its many forms</p>
-            <div class="catalog-slide__btns">
-              <a href="#" class="catalog-slide__link catalog-slide__link--dark">Discovery</a>
-              <a href="#" class="catalog-slide__link catalog-slide__link--light">Shop now</a>
-            </div>
-            <img src="img/girl-banner.png" alt="girl on banner" class="catalog-slide__image">
-          </div>
-        </div>
-        <div class="swiper-slide"></div>
-      </div>
-      <div class="swiper-pagination hero-pag"></div>
-    </div>
-  </div>
+			<main class="main">
+				<div class="hero-catalog">
+	<div class="container container-narrow hero-catalog__container">
+		<div class="swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="catalog-slide">
+						<h2 class="catalog-slide__title">
+							Серверна платформа ASUS RS300-E10-RS4
+						</h2>
+						<p class="catalog-slide__descr">
+							Сервер RS300-E10-RS4 підтримує новітні процесори Intel Xeon
+							E-серії, продуктивність яких у 2 рази вища, ніж у процесорів
+							попереднього покоління.
+						</p>
+						<div class="catalog-slide__btns">
+							<a href="#" class="catalog-slide__link catalog-slide__link--dark"
+								>Детальніше</a
+							>
+							<a href="#" class="catalog-slide__link catalog-slide__link--light"
+								>Придбати зараз</a
+							>
+						</div>
+						<img
+							src="img/server_6.png"
+							alt="girl on banner"
+							class="catalog-slide__image"
+						/>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="catalog-slide">
+						<h2 class="catalog-slide__title">
+							Сервер ARTLINE Business T81 v01
+						</h2>
+						<p class="catalog-slide__descr">
+							Сервери ARTLINE Business стануть для вас надійним фундаментом у
+							виконанні офісних і виробничих завдань, вони втілюють усе, що ви
+							чекаєте від сервера
+						</p>
+						<div class="catalog-slide__btns">
+							<a href="#" class="catalog-slide__link catalog-slide__link--dark"
+								>Детальніше</a
+							>
+							<a href="#" class="catalog-slide__link catalog-slide__link--light"
+								>Придбати зараз</a
+							>
+						</div>
+						<img
+							src="img/server_5.png"
+							alt="server_5"
+							class="catalog-slide__image"
+						/>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="catalog-slide">
+						<h2 class="catalog-slide__title">
+							Міжмережевий екран ZYXEL ZyWALL ATP100
+						</h2>
+						<p class="catalog-slide__descr">
+							Серія Zyxel ZyWALL ATP – це міжмережеві екрани, призначені для
+							малого та середнього бізнесу та оснащені інтелектуальними
+							функціями, які підвищують рівень захисту мережі.
+						</p>
+						<div class="catalog-slide__btns">
+							<a href="#" class="catalog-slide__link catalog-slide__link--dark"
+								>Детальніше</a
+							>
+							<a href="#" class="catalog-slide__link catalog-slide__link--light"
+								>Придбати зараз</a
+							>
+						</div>
+						<img
+							src="img/marshrut_1.png"
+							alt="girl on banner"
+							class="catalog-slide__image"
+						/>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="catalog-slide">
+						<h2 class="catalog-slide__title">
+							Накопичувач SSD - Micron 7450 PRO 15360GB
+						</h2>
+						<p class="catalog-slide__descr">
+							Потужний SSD накопичувач Micron 7450 PRO, ємністю 15360GB, один з
+							найкращих у своєму сементі.
+						</p>
+						<div class="catalog-slide__btns">
+							<a href="#" class="catalog-slide__link catalog-slide__link--dark"
+								>Детальніше</a
+							>
+							<a href="#" class="catalog-slide__link catalog-slide__link--light"
+								>Придбати зараз</a
+							>
+						</div>
+						<img src="img/ssd_1.png" alt="ssd1" class="catalog-slide__image" />
+					</div>
+				</div>
+			</div>
+			<div class="hero-pag swiper-pagination"></div>
+			<div class="swiper-btn-prev swiper-button-prev"></div>
+			<div class="swiper-btn-next swiper-button-next"></div>
+		</div>
+	</div>
 </div>
 
-      <section class="catalog">
-        <h2 class="visually-hidden">Catalog</h2>
-        <div class="breadcrumbs">
+				<section class="catalog">
+					<h2 class="visually-hidden">Catalog</h2>
+					<div class="breadcrumbs">
   <div class="container container-narrow">
     <ul class="breadcrumbs__list">
       <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Головна</a></li>
@@ -108,451 +185,489 @@
   </div>
 </div>
 
-        <div class="catalog-content">
-          <div class="container container-narrow">
-            <div class="catalog-filters">
-  <button class="hide-filters btn-reset">Hide Filters</button>
-  <div class="catalog-filter catalog-filter--open">
-    <div class="catalog-filter__top">
-      <div class="catalog-filter__caption">
-        <h3 class="catalog-filter__title">Categories</h3>
-        <span class="catalog-filter__quantity quantity">1</span>
-      </div>
-      <span class="catalog-filter__toggle"></span>
-    </div>
-    <div class="catalog-filter__bottom">
-      <ul class="catalog-filter__items">
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="All categories">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">All categories</span>
-          </label>
-        </li>
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="Accessories">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">Accessories</span>
-          </label>
-        </li>
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="Dresses">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">Dresses</span>
-          </label>
-        </li>
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="Coats">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">Coats</span>
-          </label>
-        </li>
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="Clothes">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">Clothes</span>
-          </label>
-        </li>
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="T-shirt">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">T-shirt</span>
-          </label>
-        </li>
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="Summer">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">Summer</span>
-          </label>
-        </li>
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="Shirts">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">Shirts</span>
-          </label>
-        </li>
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="Jacket">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">Jacket</span>
-          </label>
-        </li>
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="Short">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">Short</span>
-          </label>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="catalog-filter">
-    <div class="catalog-filter__top">
-      <div class="catalog-filter__caption">
-        <h3 class="catalog-filter__title">Color</h3>
-        <span class="catalog-filter__quantity quantity">3</span>
-      </div>
-      <span class="catalog-filter__toggle"></span>
-    </div>
-    <div class="catalog-filter__bottom">
-      <ul class="catalog-filter__items">
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="All categories">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">All categories</span>
-          </label>
-        </li>
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="Accessories">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">Accessories</span>
-          </label>
-        </li>
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="Dresses">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">Dresses</span>
-          </label>
-        </li>
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="Coats">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">Coats</span>
-          </label>
-        </li>
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="Clothes">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">Clothes</span>
-          </label>
-        </li>
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="T-shirt">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">T-shirt</span>
-          </label>
-        </li>
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="Summer">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">Summer</span>
-          </label>
-        </li>
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="Shirts">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">Shirts</span>
-          </label>
-        </li>
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="Jacket">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">Jacket</span>
-          </label>
-        </li>
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="Short">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">Short</span>
-          </label>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="catalog-filter">
-    <div class="catalog-filter__top">
-      <div class="catalog-filter__caption">
-        <h3 class="catalog-filter__title">Color</h3>
-        <span class="catalog-filter__quantity quantity">3</span>
-      </div>
-      <span class="catalog-filter__toggle"></span>
-    </div>
-    <div class="catalog-filter__bottom">
-      <ul class="catalog-filter__items">
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="All categories">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">All categories</span>
-          </label>
-        </li>
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="Accessories">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">Accessories</span>
-          </label>
-        </li>
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="Dresses">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">Dresses</span>
-          </label>
-        </li>
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="Coats">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">Coats</span>
-          </label>
-        </li>
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="Clothes">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">Clothes</span>
-          </label>
-        </li>
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="T-shirt">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">T-shirt</span>
-          </label>
-        </li>
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="Summer">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">Summer</span>
-          </label>
-        </li>
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="Shirts">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">Shirts</span>
-          </label>
-        </li>
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="Jacket">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">Jacket</span>
-          </label>
-        </li>
-        <li class="catalog-filter__item">
-          <label class="custom-checkbox" data-text="Short">
-            <input type="checkbox" class="custom-checkbox__input visually-hidden">
-            <span class="custom-checkbox__text">Short</span>
-          </label>
-        </li>
-      </ul>
-    </div>
-  </div>
+					<div class="catalog-content">
+						<div class="container container-narrow">
+							<div class="catalog-filters">
+	<button class="hide-filters btn-reset">Згорнути фільтри</button>
+  <!--! add class = "catalog-filter--open" to open -->
+	<div class="catalog-filter">
+		<div class="catalog-filter__top">
+			<div class="catalog-filter__caption">
+				<h3 class="catalog-filter__title">Категорії</h3>
+				<span class="catalog-filter__quantity quantity">1</span>
+			</div>
+			<span class="catalog-filter__toggle"></span>
+		</div>
+		<div class="catalog-filter__bottom">
+			<ul class="catalog-filter__items">
+				<li class="catalog-filter__item">
+					<label class="custom-checkbox" data-text="All categories">
+						<input
+							type="checkbox"
+							class="custom-checkbox__input visually-hidden"
+						/>
+						<span class="custom-checkbox__text">Всі категорії</span>
+					</label>
+				</li>
+				<li class="catalog-filter__item">
+					<label class="custom-checkbox" data-text="Accessories">
+						<input
+							type="checkbox"
+							class="custom-checkbox__input visually-hidden"
+						/>
+						<span class="custom-checkbox__text">Сервери</span>
+					</label>
+				</li>
+				<li class="catalog-filter__item">
+					<label class="custom-checkbox" data-text="Dresses">
+						<input
+							type="checkbox"
+							class="custom-checkbox__input visually-hidden"
+						/>
+						<span class="custom-checkbox__text">Процесори</span>
+					</label>
+				</li>
+				<li class="catalog-filter__item">
+					<label class="custom-checkbox" data-text="Coats">
+						<input
+							type="checkbox"
+							class="custom-checkbox__input visually-hidden"
+						/>
+						<span class="custom-checkbox__text">ОЗУ</span>
+					</label>
+				</li>
+				<li class="catalog-filter__item">
+					<label class="custom-checkbox" data-text="Clothes">
+						<input
+							type="checkbox"
+							class="custom-checkbox__input visually-hidden"
+						/>
+						<span class="custom-checkbox__text">Блоки живлення</span>
+					</label>
+				</li>
+				<li class="catalog-filter__item">
+					<label class="custom-checkbox" data-text="T-shirt">
+						<input
+							type="checkbox"
+							class="custom-checkbox__input visually-hidden"
+						/>
+						<span class="custom-checkbox__text">Материнські плати</span>
+					</label>
+				</li>
+				<li class="catalog-filter__item">
+					<label class="custom-checkbox" data-text="Summer">
+						<input
+							type="checkbox"
+							class="custom-checkbox__input visually-hidden"
+						/>
+						<span class="custom-checkbox__text">Кулери</span>
+					</label>
+				</li>
+				<li class="catalog-filter__item">
+					<label class="custom-checkbox" data-text="Shirts">
+						<input
+							type="checkbox"
+							class="custom-checkbox__input visually-hidden"
+						/>
+						<span class="custom-checkbox__text">SSD накопичуваі</span>
+					</label>
+				</li>
+				<li class="catalog-filter__item">
+					<label class="custom-checkbox" data-text="Jacket">
+						<input
+							type="checkbox"
+							class="custom-checkbox__input visually-hidden"
+						/>
+						<span class="custom-checkbox__text">Серверні шафи</span>
+					</label>
+				</li>
+				<li class="catalog-filter__item">
+					<label class="custom-checkbox" data-text="Short">
+						<input
+							type="checkbox"
+							class="custom-checkbox__input visually-hidden"
+						/>
+						<span class="custom-checkbox__text">Маршрутизатори</span>
+					</label>
+				</li>
+			</ul>
+		</div>
+	</div>
+  <!--! add class = "catalog-filter--open" to open -->
+	<div class="catalog-filter">
+		<div class="catalog-filter__top">
+			<div class="catalog-filter__caption">
+				<h3 class="catalog-filter__title">Потужність</h3>
+				<span class="catalog-filter__quantity quantity">3</span>
+			</div>
+			<span class="catalog-filter__toggle"></span>
+		</div>
+		<div class="catalog-filter__bottom">
+			<ul class="catalog-filter__items">
+				<li class="catalog-filter__item">
+					<label class="custom-checkbox" data-text="All categories">
+						<input
+							type="checkbox"
+							class="custom-checkbox__input visually-hidden"
+						/>
+						<span class="custom-checkbox__text">Всі категорії</span>
+					</label>
+				</li>
+				<li class="catalog-filter__item">
+					<label class="custom-checkbox" data-text="Accessories">
+						<input
+							type="checkbox"
+							class="custom-checkbox__input visually-hidden"
+						/>
+						<span class="custom-checkbox__text"
+							>К-сть ядер одного процесора</span
+						>
+					</label>
+				</li>
+				<li class="catalog-filter__item">
+					<label class="custom-checkbox" data-text="Dresses">
+						<input
+							type="checkbox"
+							class="custom-checkbox__input visually-hidden"
+						/>
+						<span class="custom-checkbox__text">Швидкість мережевої плати</span>
+					</label>
+				</li>
+				<li class="catalog-filter__item">
+					<label class="custom-checkbox" data-text="Coats">
+						<input
+							type="checkbox"
+							class="custom-checkbox__input visually-hidden"
+						/>
+						<span class="custom-checkbox__text">Форм-фактор</span>
+					</label>
+				</li>
+				<li class="catalog-filter__item">
+					<label class="custom-checkbox" data-text="Clothes">
+						<input
+							type="checkbox"
+							class="custom-checkbox__input visually-hidden"
+						/>
+						<span class="custom-checkbox__text">Обсяг HDD</span>
+					</label>
+				</li>
+				<li class="catalog-filter__item">
+					<label class="custom-checkbox" data-text="T-shirt">
+						<input
+							type="checkbox"
+							class="custom-checkbox__input visually-hidden"
+						/>
+						<span class="custom-checkbox__text">Інтерфейс підключення</span>
+					</label>
+				</li>
+				<li class="catalog-filter__item">
+					<label class="custom-checkbox" data-text="Summer">
+						<input
+							type="checkbox"
+							class="custom-checkbox__input visually-hidden"
+						/>
+						<span class="custom-checkbox__text">К-сть слотів ОЗУ</span>
+					</label>
+				</li>
+				<li class="catalog-filter__item">
+					<label class="custom-checkbox" data-text="Shirts">
+						<input
+							type="checkbox"
+							class="custom-checkbox__input visually-hidden"
+						/>
+						<span class="custom-checkbox__text">Тип ОЗУ</span>
+					</label>
+				</li>
+				<li class="catalog-filter__item">
+					<label class="custom-checkbox" data-text="Jacket">
+						<input
+							type="checkbox"
+							class="custom-checkbox__input visually-hidden"
+						/>
+						<span class="custom-checkbox__text">К-сть слотів БЖ</span>
+					</label>
+				</li>
+			</ul>
+		</div>
+	</div>
+  <!--! add class = "catalog-filter--open" to open -->
+	<div class="catalog-filter">
+		<div class="catalog-filter__top">
+			<div class="catalog-filter__caption">
+				<h3 class="catalog-filter__title">Інші</h3>
+				<span class="catalog-filter__quantity quantity">3</span>
+			</div>
+			<span class="catalog-filter__toggle"></span>
+		</div>
+		<div class="catalog-filter__bottom">
+			<ul class="catalog-filter__items">
+				<li class="catalog-filter__item">
+					<label class="custom-checkbox" data-text="All categories">
+						<input
+							type="checkbox"
+							class="custom-checkbox__input visually-hidden"
+						/>
+						<span class="custom-checkbox__text">Новий</span>
+					</label>
+				</li>
+				<li class="catalog-filter__item">
+					<label class="custom-checkbox" data-text="Accessories">
+						<input
+							type="checkbox"
+							class="custom-checkbox__input visually-hidden"
+						/>
+						<span class="custom-checkbox__text">Б/в</span>
+					</label>
+				</li>
+				<li class="catalog-filter__item">
+					<label class="custom-checkbox" data-text="Dresses">
+						<input
+							type="checkbox"
+							class="custom-checkbox__input visually-hidden"
+						/>
+						<span class="custom-checkbox__text">Безкоштовна доставка</span>
+					</label>
+				</li>
+				<li class="catalog-filter__item">
+					<label class="custom-checkbox" data-text="Coats">
+						<input
+							type="checkbox"
+							class="custom-checkbox__input visually-hidden"
+						/>
+						<span class="custom-checkbox__text">Країна виробник</span>
+					</label>
+				</li>
+			</ul>
+		</div>
+	</div>
 </div>
 
-            <div class="catalog-grid">
-  <div class="catalog-grid__props catalog-props">
-    <div class="catalog-props__top">
-      <button class="btn-reset catalog-mobile-filters">
-        <svg height="394pt" viewBox="-5 0 394 394.00003" width="394pt" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="m367.820312 0h-351.261718c-6.199219-.0117188-11.878906 3.449219-14.710938 8.960938-2.871094 5.585937-2.367187 12.3125 1.300782 17.414062l128.6875 181.285156c.042968.0625.089843.121094.132812.183594 4.675781 6.3125 7.207031 13.960938 7.21875 21.816406v147.800782c-.027344 4.375 1.691406 8.582031 4.773438 11.6875 3.085937 3.101562 7.28125 4.851562 11.65625 4.851562 2.222656-.003906 4.425781-.445312 6.480468-1.300781l72.3125-27.570313c6.476563-1.980468 10.777344-8.09375 10.777344-15.453125v-120.015625c.011719-7.855468 2.542969-15.503906 7.214844-21.816406.042968-.0625.089844-.121094.132812-.183594l128.691406-181.289062c3.667969-5.097656 4.171876-11.820313 1.300782-17.40625-2.828125-5.515625-8.511719-8.9765628-14.707032-8.964844zm0 0" />
-        </svg>
-        <span>Filters</span>
-      </button>
-      <div class="catalog-props__columns catalog-columns">
-        <span class="catalog-columns__text">Column number:</span>
-        <ul class="catalog-columns__list">
-          <li class="catalog-columns__item"><button class="btn-reset main-link catalog-columns__btn" data-columns="3">3</button></li>
-          <li class="catalog-columns__item"><button
-              class="btn-reset main-link catalog-columns__btn catalog-columns__btn--current" data-columns="4">4</button></li>
-          <li class="catalog-columns__item"><button class="btn-reset main-link catalog-columns__btn" data-columns="5">5</button></li>
-        </ul>
-      </div>
-      <div class="custom-select" tabindex="0">
-        <div class="custom-select__top">Sort by latest</div>
-        <div class="custom-select__dropdown">
-          <ul class="custom-select__list">
-            <li class="custom-select__item">Sort by latest</li>
-            <li class="custom-select__item">Sort by price</li>
-            <li class="custom-select__item">Sort by smth</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="catalog-props__choice catalog-choice">
-      <button class="btn-reset catalog-choice__clear">Clear all</button>
-    </div>
-  </div>
-  <ul class="catalog-grid__content" data-grid-columns="4">
-    <li class="catalog-grid__item">
-      <article class="product">
-        <div class="product__image">
-          <img src="img/prod-1.jpg" alt="prod 1">
-        </div>
-        <span class="product-prop product__prop new">New</span>
-        <h3 class="product__title">
-          <a href="#">
-            Eye Mesh Boat Shoes
-          </a>
-        </h3>
-        <span class="product__price">$220.00</span>
-      </article>
-    </li>
-    <li class="catalog-grid__item">
-      <article class="product">
-        <div class="product__image">
-          <img src="img/prod-1.jpg" alt="prod 1">
-        </div>
-        <h3 class="product__title">
-          <a href="#">
-            Eye Mesh Boat Shoes
-          </a>
-        </h3>
-        <span class="product__price">$220.00</span>
-      </article>
-    </li>
-    <li class="catalog-grid__item">
-      <article class="product">
-        <div class="product__image">
-          <img src="img/prod-1.jpg" alt="prod 1">
-        </div>
-        <h3 class="product__title">
-          <a href="#">
-            Eye Mesh Boat Shoes
-          </a>
-        </h3>
-        <span class="product__price">$220.00</span>
-      </article>
-    </li>
-    <li class="catalog-grid__item">
-      <article class="product">
-        <div class="product__image">
-          <span class="product__sale">Sale</span>
-          <img src="img/prod-1.jpg" alt="prod 1">
-        </div>
-        <span class="product-prop product__prop best">Best Seller</span>
-        <h3 class="product__title">
-          <a href="#">
-            Eye Mesh Boat Shoes
-          </a>
-        </h3>
-        <span class="product__price">$220.00</span>
-        <span class="product__oldprice">$165.00</span>
-      </article>
-    </li>
-    <li class="catalog-grid__item">
-      <article class="product">
-        <div class="product__image">
-          <img src="img/prod-1.jpg" alt="prod 1">
-        </div>
-        <h3 class="product__title">
-          <a href="#">
-            Eye Mesh Boat Shoes
-          </a>
-        </h3>
-        <span class="product__price">$220.00</span>
-      </article>
-    </li>
-    <li class="catalog-grid__item">
-      <article class="product">
-        <div class="product__image">
-          <img src="img/prod-1.jpg" alt="prod 1">
-        </div>
-        <h3 class="product__title">
-          <a href="#">
-            Eye Mesh Boat Shoes
-          </a>
-        </h3>
-        <span class="product__price">$220.00</span>
-      </article>
-    </li>
-    <li class="catalog-grid__item">
-      <article class="product">
-        <div class="product__image">
-          <img src="img/prod-1.jpg" alt="prod 1">
-        </div>
-        <span class="product-prop product__prop new">New</span>
-        <h3 class="product__title">
-          <a href="#">
-            Eye Mesh Boat Shoes
-          </a>
-        </h3>
-        <span class="product__price">$220.00</span>
-      </article>
-    </li>
-    <li class="catalog-grid__item">
-      <article class="product">
-        <div class="product__image">
-          <img src="img/prod-1.jpg" alt="prod 1">
-        </div>
-        <h3 class="product__title">
-          <a href="#">
-            Eye Mesh Boat Shoes
-          </a>
-        </h3>
-        <span class="product__price">$220.00</span>
-      </article>
-    </li>
-    <li class="catalog-grid__item">
-      <article class="product">
-        <div class="product__image">
-          <img src="img/prod-1.jpg" alt="prod 1">
-        </div>
-        <h3 class="product__title">
-          <a href="#">
-            Eye Mesh Boat Shoes
-          </a>
-        </h3>
-        <span class="product__price">$220.00</span>
-      </article>
-    </li>
-    <li class="catalog-grid__item">
-      <article class="product">
-        <div class="product__image">
-          <span class="product__sale">Sale</span>
-          <img src="img/prod-1.jpg" alt="prod 1">
-        </div>
-        <span class="product-prop product__prop best">Best Seller</span>
-        <h3 class="product__title">
-          <a href="#">
-            Eye Mesh Boat Shoes
-          </a>
-        </h3>
-        <span class="product__price">$220.00</span>
-        <span class="product__oldprice">$165.00</span>
-      </article>
-    </li>
-    <li class="catalog-grid__item">
-      <article class="product">
-        <div class="product__image">
-          <img src="img/prod-1.jpg" alt="prod 1">
-        </div>
-        <h3 class="product__title">
-          <a href="#">
-            Eye Mesh Boat Shoes
-          </a>
-        </h3>
-        <span class="product__price">$220.00</span>
-      </article>
-    </li>
-    <li class="catalog-grid__item">
-      <article class="product">
-        <div class="product__image">
-          <img src="img/prod-1.jpg" alt="prod 1">
-        </div>
-        <h3 class="product__title">
-          <a href="#">
-            Eye Mesh Boat Shoes
-          </a>
-        </h3>
-        <span class="product__price">$220.00</span>
-      </article>
-    </li>
-  </ul>
-  <ul class="pagination">
-    <li class="pagination__item"><a href="#" class="pagination__link pagination__link--current">1</a></li>
-    <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
-    <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
-    <li class="pagination__item">
-      <a href="#" class="pagination__link">
-        Next
-        <svg class="">
-          <use xlink:href="img/sprite.svg#angle-right"></use>
-        </svg>
-      </a>
-    </li>
-  </ul>
+							<div class="catalog-grid">
+	<div class="catalog-grid__props catalog-props">
+		<div class="catalog-props__top">
+			<button class="btn-reset catalog-mobile-filters">
+				<svg
+					height="394pt"
+					viewBox="-5 0 394 394.00003"
+					width="394pt"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="m367.820312 0h-351.261718c-6.199219-.0117188-11.878906 3.449219-14.710938 8.960938-2.871094 5.585937-2.367187 12.3125 1.300782 17.414062l128.6875 181.285156c.042968.0625.089843.121094.132812.183594 4.675781 6.3125 7.207031 13.960938 7.21875 21.816406v147.800782c-.027344 4.375 1.691406 8.582031 4.773438 11.6875 3.085937 3.101562 7.28125 4.851562 11.65625 4.851562 2.222656-.003906 4.425781-.445312 6.480468-1.300781l72.3125-27.570313c6.476563-1.980468 10.777344-8.09375 10.777344-15.453125v-120.015625c.011719-7.855468 2.542969-15.503906 7.214844-21.816406.042968-.0625.089844-.121094.132812-.183594l128.691406-181.289062c3.667969-5.097656 4.171876-11.820313 1.300782-17.40625-2.828125-5.515625-8.511719-8.9765628-14.707032-8.964844zm0 0"
+					/>
+				</svg>
+				<span>Фільтри</span>
+			</button>
+			<div class="catalog-props__columns catalog-columns">
+				<span class="catalog-columns__text">К-сть колон:</span>
+				<ul class="catalog-columns__list">
+					<li class="catalog-columns__item">
+						<button
+							class="btn-reset main-link catalog-columns__btn"
+							data-columns="3"
+						>
+							3
+						</button>
+					</li>
+					<li class="catalog-columns__item">
+						<button
+							class="btn-reset main-link catalog-columns__btn catalog-columns__btn--current"
+							data-columns="4"
+						>
+							4
+						</button>
+					</li>
+					<li class="catalog-columns__item">
+						<button
+							class="btn-reset main-link catalog-columns__btn"
+							data-columns="5"
+						>
+							5
+						</button>
+					</li>
+				</ul>
+			</div>
+      <!--! add class = "custom-select--open" to open dropdown  -->
+			<div class="custom-select" tabindex="0">
+				<div class="custom-select__top">Сортувати за новизною</div>
+				<div class="custom-select__dropdown">
+					<ul class="custom-select__list">
+						<li class="custom-select__item">Сортувати за новизною</li>
+						<li class="custom-select__item">Сортувати за популярними</li>
+						<li class="custom-select__item">Сортувати за ціною</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="catalog-props__choice catalog-choice">
+			<button class="btn-reset catalog-choice__clear">Очистити фільтри</button>
+		</div>
+	</div>
+	<ul class="catalog-grid__content" data-grid-columns="4">
+		<li class="catalog-grid__item">
+			<article class="product">
+				<div class="product__image">
+					<img src="img/server_1.png" alt="prod 1" />
+				</div>
+				<span class="product-prop product__prop new">New</span>
+				<h3 class="product__title">
+					<a href="#"> Artline Business T81 v01</a>
+				</h3>
+				<span class="product__price">$450.00</span>
+			</article>
+		</li>
+		<li class="catalog-grid__item">
+			<article class="product">
+				<div class="product__image">
+					<img src="img/server_2.png" alt="prod 1" />
+				</div>
+				<h3 class="product__title">
+					<a href="#"> ASUS RF Business L-10 </a>
+				</h3>
+				<span class="product__price">$220.00</span>
+			</article>
+		</li>
+		<li class="catalog-grid__item">
+			<article class="product">
+				<div class="product__image">
+					<img src="img/server_3.png" alt="prod 1" />
+				</div>
+				<h3 class="product__title">
+					<a href="#"> Artline K-8570 </a>
+				</h3>
+				<span class="product__price">$400.00</span>
+			</article>
+		</li>
+		<li class="catalog-grid__item">
+			<article class="product">
+				<div class="product__image">
+					<span class="product__sale">Sale</span>
+					<img src="img/cpu_1.png" alt="prod 1" />
+				</div>
+				<span class="product-prop product__prop best">Best Seller</span>
+				<h3 class="product__title">
+					<a href="#"> CPU AMD Ryzen 5 7600 </a>
+				</h3>
+				<span class="product__oldprice">$150.00</span>
+				<span class="product__price">$105.00</span>
+			</article>
+		</li>
+		<li class="catalog-grid__item">
+			<article class="product">
+				<div class="product__image">
+					<img src="img/server_6.png" alt="prod 1" />
+				</div>
+				<h3 class="product__title">
+					<a href="#"> ASUS RS300 E10 RS6 </a>
+				</h3>
+				<span class="product__oldprice">$800.00</span>
+				<span class="product__price">$600.00</span>
+			</article>
+		</li>
+		<li class="catalog-grid__item">
+			<article class="product">
+				<div class="product__image">
+					<img src="img/cpu_box_4.png" alt="prod 1" />
+				</div>
+				<h3 class="product__title">
+					<a href="#"> CPU AMD Ryzen 9 </a>
+				</h3>
+				<span class="product__price">$130.00</span>
+			</article>
+		</li>
+		<li class="catalog-grid__item">
+			<article class="product">
+				<div class="product__image">
+					<img src="img/cpu_box_3.png" alt="prod 1" />
+				</div>
+				<span class="product-prop product__prop new">New</span>
+				<h3 class="product__title">
+					<a href="#"> CPU Intel Core i7 12-th </a>
+				</h3>
+				<span class="product__price">$110.00</span>
+			</article>
+		</li>
+		<li class="catalog-grid__item">
+			<article class="product">
+				<div class="product__image">
+					<img src="img/ozu_1.png" alt="prod 1" />
+				</div>
+				<h3 class="product__title">
+					<a href="#"> Fury DD4 </a>
+				</h3>
+				<span class="product__price">$80.00</span>
+			</article>
+		</li>
+		<li class="catalog-grid__item">
+			<article class="product">
+				<div class="product__image">
+					<img src="img/mat_plata_1.png" alt="prod 1" />
+				</div>
+				<h3 class="product__title">
+					<a href="#"> Eye Mesh Boat Shoes </a>
+				</h3>
+				<span class="product__price">$200.00</span>
+			</article>
+		</li>
+		<li class="catalog-grid__item">
+			<article class="product">
+				<div class="product__image">
+					<span class="product__sale">Sale</span>
+					<img src="img/mat_plata_3.png" alt="prod 1" />
+				</div>
+				<span class="product-prop product__prop best">Best Seller</span>
+				<h3 class="product__title">
+					<a href="#"> Eye Mesh Boat Shoes </a>
+				</h3>
+				<span class="product__oldprice">$250.00</span>
+				<span class="product__price">$165.00</span>
+			</article>
+		</li>
+		<li class="catalog-grid__item">
+			<article class="product">
+				<div class="product__image">
+					<img src="img/stilazh_2.png" alt="prod 1" />
+				</div>
+				<h3 class="product__title">
+					<a href="#"> Серверна шафа CMS MGSE 28U </a>
+				</h3>
+				<span class="product__price">$300.00</span>
+			</article>
+		</li>
+		<li class="catalog-grid__item">
+			<article class="product">
+				<div class="product__image">
+					<img src="img/ssd_1.png" alt="prod 1" />
+				</div>
+				<h3 class="product__title">
+					<a href="#"> SSD Micron 7450 PRO 15360GB </a>
+				</h3>
+				<span class="product__price">$120.00</span>
+			</article>
+		</li>
+	</ul>
+	<ul class="pagination">
+		<li class="pagination__item">
+			<a href="#" class="pagination__link pagination__link--current">1</a>
+		</li>
+		<li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+		<li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+		<li class="pagination__item">
+			<a href="#" class="pagination__link">
+				Next
+				<svg class="">
+					<use xlink:href="img/sprite.svg#angle-right"></use>
+				</svg>
+			</a>
+		</li>
+	</ul>
 </div>
 
-          </div>
-        </div>
-      </section>
-    </main>
-		<footer class="footer footer--2">
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer footer--2">
 	<div class="container footer__container">
     <div class="footer__content">
       <div class="footer__top">
@@ -618,12 +733,13 @@
   </div>
 </footer>
 
-		<a href="#" class="to-top">
-      <svg class="">
-        <use xlink:href="img/sprite.svg#to-top"></use>
-      </svg>
-    </a>
-	</div>
-	<script src="js/main.js"></script>
-</body>
+			<a href="#" class="to-top">
+				<svg class="">
+					<use xlink:href="img/sprite.svg#to-top"></use>
+				</svg>
+			</a>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>
