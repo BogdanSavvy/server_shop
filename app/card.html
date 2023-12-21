@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="theme-color" content="#111111">
-	<title>SSphere</title>
-	<link rel="stylesheet" href="css/main.min.css">
-</head>
-<body class="card-page">
-	<div class="site-container">
-    <header class="header">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="theme-color" content="#111111" />
+		<title>SSphere - product</title>
+		<link rel="stylesheet" href="css/main.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+	</head>
+	<body class="card-page">
+		<div class="site-container">
+			<header class="header">
 	<div class="container header__container">
+		<!-- ! add class = "burge--active" to trigger burger -->
 		<button class="burger btn-reset header__burger">
 			<span class="burger__line"></span>
 		</button>
+		<!-- ! add class = "nav--visible" to open sidebar nav-menu -->
 		<nav class="nav header__nav">
 			<ul class="nav__list">
 				<li class="nav__item">
@@ -28,8 +34,8 @@
 			<button class="nav__close btn-reset">close</button>
 		</nav>
 		<a href="/" class="logo header__logo" aria-label="logo">
-      <img src="../img/logo.png" alt="LOGO">
-    </a>
+			<img src="../img/logo.png" alt="LOGO" />
+		</a>
 		<ul class="shop-nav header__shop-nav">
 			<li class="shop-nav__item">
 				<form action="#" class="shop-nav__search-form search-form">
@@ -57,318 +63,445 @@
 	</div>
 </header>
 
-    <main class="main">
-      <section class="card">
-        <h2 class="visually-hidden">Product card</h2>
-        <div class="breadcrumbs">
-  <div class="container container-narrow">
-    <ul class="breadcrumbs__list">
-      <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Головна</a></li>
-      <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Каталог</a></li>
-      <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--current">New Arrvals</a>
-      </li>
-    </ul>
-    <a href="#" class="card-prev">Prev</a>
+			<main class="main">
+				<section class="card">
+					<h2 class="visually-hidden">Product card</h2>
+					<div class="breadcrumbs">
+	<div class="container container-narrow">
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item">
+				<a href="" class="breadcrumbs__link">Головна</a>
+			</li>
+			<li class="breadcrumbs__item">
+				<a href="" class="breadcrumbs__link">Каталог</a>
+			</li>
+			<li class="breadcrumbs__item">
+				<a class="breadcrumbs__link breadcrumbs__link--current"
+					>Нові надходження</a
+				>
+			</li>
+		</ul>
+		<a href="#" class="card-prev">Prev</a>
 <a href="#" class="card-next">Next</a>
 
-  </div>
+	</div>
 </div>
 
-        <div class="card-content">
-          <div class="card-content__top">
-            <div class="card-top">
-  <div class="container container-narrow">
-    <div class="card-top__left">
-      <div class="card-slider">
-        <div class="card-slider__thumbs">
-          <div class="card-slider__thumb">
-            <img src="img/1.png" alt="">
-          </div>
-          <div class="card-slider__thumb">
-            <img src="img/1.png" alt="">
-          </div>
-          <div class="card-slider__thumb">
-            <img src="img/1.png" alt="">
-          </div>
-          <div class="card-slider__thumb">
-            <img src="img/1.png" alt="">
-          </div>
-          <div class="card-slider__thumb">
-            <img src="img/1.png" alt="">
-          </div>
-        </div>
-        <div class="card-slider__main">
-          <img src="img/card-main.jpg" alt="">
-        </div>
-      </div>
-    </div>
-    <div class="card-top__right">
-      <div class="card-info">
-        <span class="card-info__prop product-prop best">Best Seller</span>
-        <h3 class="card-info__title">Band-collar popover tunic</h3>
-        <div class="card-info__rate">
-          <img src="img/stars.png" alt="Rate 4 of 5">
-          <span>2 Reviews</span>
-        </div>
-        <div class="card-info__price info-price">
-          <div class="info-price__current">$128.00</div>
-          <div class="info-price__old">$165.00</div>
-        </div>
-        <p class="card-info__descr">
-          We love the dramatic ruffle details down the sleeve, delicate fabric buttons and polished cuffs.
-        </p>
-        <div class="card-info__select card-info__first-select color-select">
-          <p class="color-select__selected">Color: <span>Green</span></p>
-          <ul class="color-select__list">
-            <li class="color-select__item"><button class="color-select__btn btn-reset" data-color="red" aria-label="Choice red color" style="background-color: red;"></button></li>
-            <li class="color-select__item"><button class="color-select__btn btn-reset" data-color="orange"
-                aria-label="Choice orange color" style="background-color:orange;"></button></li>
-            <li class="color-select__item"><button class="color-select__btn btn-reset color-select__btn--active" data-color="green"
-                aria-label="Choice green color" style="background-color: green;"></button></li>
-            <li class="color-select__item"><button class="color-select__btn btn-reset" data-color="white"
-                aria-label="Choice white color" style="background-color: white;"></button></li>
-            <li class="color-select__item"><button class="color-select__btn btn-reset" data-color="black"
-                aria-label="Choice black color" style="background-color: black;"></button></li>
-            <li class="color-select__item"><button class="color-select__btn btn-reset" data-color="brown"
-                aria-label="Choice brown color" style="background-color: brown;"></button></li>
-            <li class="color-select__item"><button class="color-select__btn btn-reset" data-color="purple"
-                aria-label="Choice purple color" style="background-color: purple;"></button></li>
-            <li class="color-select__item"><button class="color-select__btn btn-reset" data-color="grey"
-                aria-label="Choice grey color" style="background-color: grey;"></button></li>
-          </ul>
-        </div>
-        <div class="card-info__select size-select card-info__second-select">
-          <p class="size-select__selected">size: <span>Select a size</span></p>
-          <ul class="size-select__list">
-            <li class="size-select__item"><button class="size-select__btn btn-reset"
-                aria-label="Choice 23 size">23</button></li>
-            <li class="size-select__item"><button class="size-select__btn btn-reset"
-                aria-label="Choice 24 size">24</button></li>
-            <li class="size-select__item"><button class="size-select__btn btn-reset"
-                aria-label="Choice 25 size">25</button></li>
-            <li class="size-select__item"><button class="size-select__btn btn-reset"
-                aria-label="Choice 26 size">26</button></li>
-            <li class="size-select__item"><button class="size-select__btn btn-reset"
-                aria-label="Choice 27 size">27</button></li>
-            <li class="size-select__item"><button class="size-select__btn btn-reset"
-                aria-label="Choice 28 size">28</button></li>
-            <li class="size-select__item"><button class="size-select__btn btn-reset"
-                aria-label="Choice 29 size">29</button></li>
-            <li class="size-select__item"><button class="size-select__btn btn-reset"
-                aria-label="Choice 30 size">30</button></li>
-            <li class="size-select__item"><button class="size-select__btn btn-reset"
-                aria-label="Choice 31 size">31</button></li>
-          </ul>
-          <button class="btn-reset size-select__clear">
-            <svg class="">
-              <use xlink:href="img/sprite.svg#close"></use>
-            </svg>
-            clear
-          </button>
-        </div>
-        <div class="card-info__stepper stepper">
-          <button class="btn-reset stepper__btn stepper__btn--minus stepper__btn--disabled" aria-label="minus">
-            <svg class="">
-              <use xlink:href="img/sprite.svg#minus"></use>
-            </svg>
-          </button>
-          <input type="text" class="stepper__input" value="1" maxlength="5">
-          <button class="btn-reset stepper__btn stepper__btn--plus" aria-label="plus">
-            <svg class="">
-              <use xlink:href="img/sprite.svg#plus"></use>
-            </svg>
-          </button>
-        </div>
-        <button class="btn-reset card-info__btn card-info__btn--tocart">Add to cart</button>
-        <button class="btn-reset card-info__btn card-info__btn--towishlist">Add to wishlist</button>
-        <div class="card-info__bottom card-bottom">
-          <div class="card-bottom__item">
-            <span>Sku:</span>
-            FW511
-          </div>
-          <div class="card-bottom__item">
-            <span>Category:</span>
-            <a href="#">Trousers,</a>
-            <a href="#">Life style</a>
-          </div>
-          <div class="card-bottom__item">
-            <span>Tags:</span>
-            <a href="#">Designer</a>
-            <a href="#">Women</a>
-          </div>
-          <div class="card-bottom__social">
-            <span>Share:</span>
-            <ul class="social">
-              <li class="social__item"><a href="#" class="social__link social__link--tw" aria-label="Go to twitter"></a>
-              </li>
-              <li class="social__item"><a href="#" class="social__link social__link--fb"
-                  aria-label="Go to facebook"></a>
-              </li>
-              <li class="social__item"><a href="#" class="social__link social__link--in"
-                  aria-label="Go to instagram"></a>
-              </li>
-              <li class="social__item"><a href="#" class="social__link social__link--pin"
-                  aria-label="Go to pinterest"></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+					<div class="card-content">
+						<div class="card-content__top">
+							<div class="card-top">
+	<div class="container container-narrow">
+		<div class="card-top__left">
+			<div class="card-slider" data-color="black">
+				<div class="card-slider__thumbs">
+					<div class="card-slider__thumb">
+						<img src="img/rtx4060-black_1.jpg" alt="rtx4060-black_1" />
+					</div>
+					<div class="card-slider__thumb">
+						<img src="img/rtx4060-black_2.jpg" alt="rtx4060-black_2" />
+					</div>
+					<div class="card-slider__thumb">
+						<img src="img/rtx4060-black_3.jpg" alt="rtx4060-black_3" />
+					</div>
+					<div class="card-slider__thumb">
+						<img src="img/rtx4060-black_4.jpg" alt="rtx4060-black_4" />
+					</div>
+					<div class="card-slider__thumb">
+						<img src="img/rtx4060-black_5.jpg" alt="rtx4060-black_5" />
+					</div>
+				</div>
+				<div class="card-slider__main">
+					<img src="img/rtx4060-black_1.jpg" alt="rtx4060-black_1" />
+				</div>
+			</div>
+			<div class="card-slider visually-hidden" data-color="white">
+				<div class="card-slider__thumbs">
+					<div class="card-slider__thumb">
+						<img src="img/rtx4060-white_1.jpg" alt="rtx4060-white_1" />
+					</div>
+					<div class="card-slider__thumb">
+						<img src="img/rtx4060-white_2.jpg" alt="rtx4060-white_2" />
+					</div>
+					<div class="card-slider__thumb">
+						<img src="img/rtx4060-white_3.jpg" alt="rtx4060-white_3" />
+					</div>
+					<div class="card-slider__thumb">
+						<img src="img/rtx4060-white_4.jpg" alt="rtx4060-white_4" />
+					</div>
+					<div class="card-slider__thumb">
+						<img src="img/rtx4060-white_5.jpg" alt="rtx4060-white_5" />
+					</div>
+				</div>
+				<div class="card-slider__main">
+					<img src="img/rtx4060-white_1.jpg" alt="rtx4060-white_1" />
+				</div>
+			</div>
+		</div>
+		<div class="card-top__right">
+			<div class="card-info">
+				<span class="card-info__prop product-prop best">Best Seller</span>
+				<h3 class="card-info__title">Asus RTX 4060 DUAL OC 8GB GDDR6</h3>
+				<div class="card-info__rate">
+					<img src="img/stars.png" alt="Rate 4 of 5" />
+					<span>2 Відгуків</span>
+				</div>
+				<div class="card-info__price info-price">
+					<div class="info-price__current">$360.00</div>
+					<div class="info-price__old">$420.00</div>
+				</div>
+				<p class="card-info__descr">
+					ASUS Dual є ідеальним вибором для геймерів, яким потрібна потужна графічна продуктивність компактного корпусу.
+				</p>
+				<div class="card-info__select card-info__first-select color-select">
+					<p class="color-select__selected">Color: <span>White</span></p>
+					<ul class="color-select__list">
+						<li class="color-select__item">
+							<button
+								class="color-select__btn btn-reset"
+								data-color="white"
+								aria-label="Choice white color"
+								style="background-color: white"
+							></button>
+						</li>
+						<li class="color-select__item">
+							<button
+								class="color-select__btn btn-reset color-select__btn--active"
+								data-color="black"
+								aria-label="Choice black color"
+								style="background-color: black"
+							></button>
+						</li>
+					</ul>
+				</div>
+				<div class="card-info__select size-select card-info__second-select">
+					<p class="size-select__selected">Об'єм вбудованої пам'яті:</p>
+					<ul class="size-select__list">
+						<li class="size-select__item">
+							<button
+								class="size-select__btn btn-reset size-select__btn--active"
+								aria-label="Choice 23 size"
+							>
+								8 GB
+							</button>
+						</li>
+					</ul>
+					<button class="btn-reset size-select__clear">
+						<svg class="">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+						clear
+					</button>
+				</div>
+				<div class="card-info__stepper stepper">
+					<button
+						class="btn-reset stepper__btn stepper__btn--minus stepper__btn--disabled"
+						aria-label="minus"
+					>
+						<svg class="">
+							<use xlink:href="img/sprite.svg#minus"></use>
+						</svg>
+					</button>
+					<input id="input" type="text" class="stepper__input" value="1" maxlength="5" />
+					<button
+						class="btn-reset stepper__btn stepper__btn--plus"
+						aria-label="plus"
+					>
+						<svg class="">
+							<use xlink:href="img/sprite.svg#plus"></use>
+						</svg>
+					</button>
+				</div>
+				<button class="btn-reset card-info__btn card-info__btn--tocart">
+					Add to cart
+				</button>
+				<button class="btn-reset card-info__btn card-info__btn--towishlist">
+					Add to wishlist
+				</button>
+				<div class="card-info__bottom card-bottom">
+					<div class="card-bottom__item">
+						<span>Артикул:</span>
+						FW511
+					</div>
+					<div class="card-bottom__item">
+						<span>Категорія:</span>
+						<a href="#">Комплетуючі</a>
+					</div>
+					<div class="card-bottom__item">
+						<span>Теги:</span>
+						<a href="#">Відеокарти</a>
+					</div>
+					<div class="card-bottom__social">
+						<span>Поділитись:</span>
+						<ul class="social">
+							<li class="social__item">
+								<a
+									href="#"
+									class="social__link social__link--tw"
+									aria-label="Go to twitter"
+								></a>
+							</li>
+							<li class="social__item">
+								<a
+									href="#"
+									class="social__link social__link--fb"
+									aria-label="Go to facebook"
+								></a>
+							</li>
+							<li class="social__item">
+								<a
+									href="#"
+									class="social__link social__link--in"
+									aria-label="Go to instagram"
+								></a>
+							</li>
+							<li class="social__item">
+								<a
+									href="#"
+									class="social__link social__link--pin"
+									aria-label="Go to pinterest"
+								></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+ <div class="card-content__bottom">
+	<div class="card-bottom-content">
+		<div class="container container-narrow">
+			<div class="card-description">
+				<div class="card-description__left">
+					<ul class="card-description__navigation" data-bar>
+						<li class="card-description__item">
+							<a href="#one" class="card-description__link">Опис</a>
+						</li>
+						<li class="card-description__item">
+							<a href="#two" class="card-description__link">Характеристики</a>
+						</li>
+						<li class="card-description__item">
+							<a href="#three" class="card-description__link">Відгуки (2)</a>
+						</li>
+					</ul>
+				</div>
+				<div class="card-description__right">
+					<div class="card-description__content" data-target="one">
+						<p>
+							ASUS Dual GeForce RTX 4060 поєднує динамічні теплові
+							характеристики із широкою сумісністю. Удосконалені рішення для
+							охолодження флагманських відеокарт, у тому числі два вентилятори
+							Axial-tech для збільшення потоку повітря до радіатора, упаковані в
+							карту довжиною 22.7 см з 2.5 слотами, забезпечуючи більшу
+							потужність у меншому просторі. Ці удосконалення роблять ASUS Dual
+							ідеальним вибором для геймерів, яким потрібна потужна графічна
+							продуктивність компактного корпусу.
+						</p>
+						<p>
+							<span>Осьовий дизайн вентилятора</span><br />
+							Два перевірені часом вентилятори Axial-tech мають меншу ступицю,
+							яка дозволяє використовувати більш довгі лопаті, та бар'єрне
+							кільце для збільшення тиску повітря, спрямованого вниз.
+						</p>
+						<p>
+							<span>Технологія 0 дБ</span><br />
+							Щоб усунути непотрібний шум, режим зупинки зупиняє всі
+							вентилятори, коли температура графічного процесора знижується
+							нижче 55 градусів і низьке енергоспоживання.
+						</p>
+						<p>
+							<span>2.5-слотовий дизайн</span> <br />
+							Ретельно спроєктований кожух, радіатор та розташування теплових
+							трубок дозволяють двом вентиляторам Axial-tech використовувати
+							вентиляцію бічної панелі корпусу та забезпечувати теплові
+							характеристики, які суперечать розміру карти.
+						</p>
+						<p>
+							<span>Auto-Extreme</span> <br />
+							Технологія Auto-Extreme - це автоматизований виробничий процес,
+							який встановлює нові стандарти в галузі, дозволяючи виконувати всю
+							пайку за один прохід. Це знижує теплове навантаження на компоненти
+							та дозволяє уникнути використання агресивних хімікатів, що
+							чистять, що знижує вплив на навколишнє середовище, знижує
+							енергоспоживання при виробництві та підвищує надійність продукту в
+							цілому.
+						</p>
+					</div>
+					<div class="card-description__content" data-target="two">
+						<p><span>Графічний чип:</span> GeForce RTX 4060</p>
+						<p><span>Частота пам'яті:</span> 17000 МГц</p>
+						<p>
+							<span>Частота ядра OC mode:</span> 2535 МГц Default mode: 2505 МГц
+							(Boost Clock)
+						</p>
+						<p>
+							<span>Система охолодження:</span> Axial-tech Обсяг пам'яті 8 ГБ
+						</p>
+						<p><span>Розрядність шини пам'яті:</span> 128 біт</p>
+						<p><span>Тип пам'яті:</span> GDDR6</p>
+						<p><span>Розміри:</span> 227.2 x 123.24 x 49.6 мм</p>
+						<p><span>Країна-виробник:</span> Китай</p>
+						<p><span>Інтерфейс:</span> PCI-Express x8 4.0</p>
+						<p><span>Додаткове:</span> живлення 8 pin</p>
+						<p><span>Форм-фактор:</span> Дискретна (Стандартна)</p>
+						<p><span>Гарантія:</span> 36 місяців</p>
+						<p><span>Кількість вентиляторів:</span> 2</p>
+						<p><span>Довжина відеокарти,мм:</span> 227.2</p>
+						<p><span>Зайнятих слотів:</span> 2.5</p>
+					</div>
+					<div class="card-description__content" data-target="three">
+						<p>
+							<span>Відгук 1</span> Оцінка <span>4 ⭐</span> <br />
+							Хочеться відзначити перше враження при розпакуванні, підставка під
+							телефон та картка, дрібниця та приємно. Сама карта виглядає дуже
+							красиво, продуктивність якщо порівнювати зі старою відеокартою
+							величезна, особливо тішить споживання та температури. Єдине що
+							мені не сподобалося це артефакти у браузері хтось каже що це
+							проблеми драйверів, хтось що бракує відеопам'ять. Година тестувала
+							в OCCT і ніяких проблем. Хотів би почути варіант від самого
+							виробника
+						</p>
+						<p>
+							<span>Александр Чокан </span> Оцінка <span>5 ⭐</span> <br />
+							Купив карту десь 3 тижні тому, поки працює відмінно, була від Asus
+							1060 6gb пропрацювала 4 роки без нарікань, але ця карта видає на
+							100 фпс більше в усіх іграх. Трохи шумить коли довго граєшь, ще є
+							чудове програмне забезпечення від Asus в якому все просто і чудово
+							налаштовується рекомендую до покупки!
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="card-related">
+				<h2 class="card-related__title">Разом з цим товаром купують</h2>
+				<div class="card-related__slider">
+					<div class="card-swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<article class="product">
+									<div class="product__image">
+										<span class="product__sale">Sale</span>
+										<img src="img/mat_plata_3.png" alt="prod 1" />
+									</div>
+									<span class="product-prop product__prop best"
+										>Best Seller</span
+									>
+									<h3 class="product__title">
+										<a href="#"> Asus TUF Gaming B450M-Pro II </a>
+									</h3>
+									<div class="product-custom">
+										<div class="product-custom__price">
+											<span class="product__price">$100.00</span>
+											<span class="product__oldprice">$130.00</span>
+										</div>
+										<div class="product-custom__cart">
+											<button class="btn-reset to-cart">В корзину</button>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="product">
+									<div class="product__image">
+										<span class="product__sale">Sale</span>
+										<img src="img/cpu_box_3.png" alt="prod 1" />
+									</div>
+									<h3 class="product__title">
+										<a href="#"> Intel Core i7-14700KF </a>
+									</h3>
+									<div class="product-custom">
+										<div class="product-custom__price">
+											<span class="product__price">$290.00</span>
+											<span class="product__oldprice">$325.00</span>
+										</div>
+										<div class="product-custom__cart">
+											<button class="btn-reset to-cart">В корзину</button>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="product">
+									<div class="product__image">
+										<span class="product__sale">Sale</span>
+										<img src="img/kuler_1.png" alt="prod 1" />
+									</div>
+									<span class="product-prop product__prop best"
+										>Best Seller</span
+									>
+									<h3 class="product__title">
+										<a href="#"> Кулер Noctua NH-D15S </a>
+									</h3>
+									<div class="product-custom">
+										<div class="product-custom__price">
+											<span class="product__price">$110.00</span>
+										</div>
+										<div class="product-custom__cart">
+											<button class="btn-reset to-cart">В корзину</button>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="product">
+									<div class="product__image">
+										<span class="product__sale">Sale</span>
+										<img src="img/ssd_1.png" alt="prod 1" />
+									</div>
+									<span class="product-prop product__prop best"
+										>Best Seller</span
+									>
+									<h3 class="product__title">
+										<a href="#"> SSD Micron 7450 PRO 15360GB </a>
+									</h3>
+									<div class="product-custom">
+										<div class="product-custom__price">
+											<span class="product__price">$120.00</span>
+											<span class="product__oldprice">$145.00</span>
+										</div>
+										<div class="product-custom__cart">
+											<button class="btn-reset to-cart">В корзину</button>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="product">
+									<div class="product__image">
+										<span class="product__sale">Sale</span>
+										<img src="img/gpu_1.png" alt="prod 1" />
+									</div>
+									<span class="product-prop product__prop best"
+										>Best Seller</span
+									>
+									<h3 class="product__title">
+										<a href="#"> MSI PCI-Ex GeForce RTX 4060 Ti Gaming X </a>
+									</h3>
+									<div class="product-custom">
+										<div class="product-custom__price">
+											<span class="product__price">$370.00</span>
+											<span class="product__oldprice">$405.00</span>
+										</div>
+										<div class="product-custom__cart">
+											<button class="btn-reset to-cart">В корзину</button>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination related-pag"></div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
-            <div class="card-content__bottom">
-  <div class="card-bottom-content">
-    <div class="container container-narrow">
-      <div class="card-description">
-        <div class="card-description__left">
-          <ul class="card-description__navigation" data-bar>
-            <li class="card-description__item"><a href="#one"
-                class="card-description__link card-description__link--active">Description</a></li>
-            <li class="card-description__item"><a href="#two" class="card-description__link">Additional information</a>
-            </li>
-            <li class="card-description__item"><a href="#three" class="card-description__link">Reviews (2)</a></li>
-            <li class="card-description__item"><a href="#four" class="card-description__link">Description</a></li>
-          </ul>
-        </div>
-        <div class="card-description__right">
-          <div class="card-description__content card-description__content--active" data-target="#one">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-              doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
-              beatae vitae dicta sunt explicabo.</p>
-              <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
-                dolor
-                sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-                dolore
-                magnam aliquam quaerat voluptatem.</p>
-          </div>
-          <div class="card-description__content" data-target="#two">
-            <p>sLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-              doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
-              beatae vitae dicta sunt explicabo.</p>
-            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-              dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
-              dolor
-              sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-              dolore
-              magnam aliquam quaerat voluptatem.</p>
-          </div>
-        </div>
-      </div>
-      <div class="card-related">
-        <h2 class="card-related__title">Related Products</h2>
-        <div class="card-related__slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <article class="product">
-                <div class="product__image">
-                  <span class="product__sale">Sale</span>
-                  <img src="img/prod-1.jpg" alt="prod 1">
-                </div>
-                <span class="product-prop product__prop best">Best Seller</span>
-                <h3 class="product__title">
-                  <a href="#">
-                    Eye Mesh Boat Shoes
-                  </a>
-                </h3>
-                <div class="product-custom">
-                  <div class="product-custom__price">
-                    <span class="product__price">$220.00</span>
-                    <span class="product__oldprice">$165.00</span>
-                  </div>
-                  <div class="product-custom__cart">
-                    <button class="btn-reset to-cart">Add to cart</button>
-                  </div>
-                </div>
-
-              </article>
-            </div>
-            <div class="swiper-slide">
-              <article class="product">
-                <div class="product__image">
-                  <span class="product__sale">Sale</span>
-                  <img src="img/prod-1.jpg" alt="prod 1">
-                </div>
-                <span class="product-prop product__prop best">Best Seller</span>
-                <h3 class="product__title">
-                  <a href="#">
-                    Eye Mesh Boat Shoes
-                  </a>
-                </h3>
-                <span class="product__price">$220.00</span>
-                <span class="product__oldprice">$165.00</span>
-              </article>
-            </div>
-            <div class="swiper-slide">
-              <article class="product">
-                <div class="product__image">
-                  <span class="product__sale">Sale</span>
-                  <img src="img/prod-1.jpg" alt="prod 1">
-                </div>
-                <span class="product-prop product__prop best">Best Seller</span>
-                <h3 class="product__title">
-                  <a href="#">
-                    Eye Mesh Boat Shoes
-                  </a>
-                </h3>
-                <span class="product__price">$220.00</span>
-                <span class="product__oldprice">$165.00</span>
-              </article>
-            </div>
-            <div class="swiper-slide">
-              <article class="product">
-                <div class="product__image">
-                  <span class="product__sale">Sale</span>
-                  <img src="img/prod-1.jpg" alt="prod 1">
-                </div>
-                <span class="product-prop product__prop best">Best Seller</span>
-                <h3 class="product__title">
-                  <a href="#">
-                    Eye Mesh Boat Shoes
-                  </a>
-                </h3>
-                <span class="product__price">$220.00</span>
-                <span class="product__oldprice">$165.00</span>
-              </article>
-            </div>
-            <div class="swiper-slide">
-              <article class="product">
-                <div class="product__image">
-                  <span class="product__sale">Sale</span>
-                  <img src="img/prod-1.jpg" alt="prod 1">
-                </div>
-                <span class="product-prop product__prop best">Best Seller</span>
-                <h3 class="product__title">
-                  <a href="#">
-                    Eye Mesh Boat Shoes
-                  </a>
-                </h3>
-                <span class="product__price">$220.00</span>
-                <span class="product__oldprice">$165.00</span>
-              </article>
-            </div>
-          </div>
-          <div class="swiper-pagination related-pag"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-          </div>
-        </div>
-      </section>
-    </main>
-		<footer class="footer footer--2">
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer footer--2">
 	<div class="container footer__container">
     <div class="footer__content">
       <div class="footer__top">
@@ -400,7 +533,7 @@
                 <ul class="custom-select__list">
                   <li class="custom-select__item">USD</li>
                   <li class="custom-select__item">EUR</li>
-                  <li class="custom-select__item">RUB</li>
+                  <li class="custom-select__item">UAH</li>
                 </ul>
               </div>
             </div>
@@ -408,7 +541,7 @@
           <div class="footer__select">
             <span class="footer__select-caption">Language</span>
             <div class="custom-select custom-select--footer" tabindex="0">
-              <div class="custom-select__top">English</div>
+              <div class="custom-select__top">Ukrainian</div>
               <div class="custom-select__dropdown">
                 <ul class="custom-select__list">
                   <li class="custom-select__item">English</li>
@@ -423,7 +556,7 @@
       <div class="footer__bottom">
         <div class="footer__left">
           <small class="footer__copy">
-            ©2019 Zonex All rights reserved
+            ©2023 ServerSphere All rights reserved
           </small>
         </div>
         <div class="footer__right">
@@ -434,7 +567,8 @@
   </div>
 </footer>
 
-	</div>
-	<script src="js/main.js"></script>
-</body>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>

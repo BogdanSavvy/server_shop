@@ -74,9 +74,12 @@
 		align-items: center;
 		justify-content: space-between;
 		padding: 0 200px;
-		height: 100%;
-
+		height: 900px;
 		padding: 0;
+
+		@include lg-max {
+			height: 700px;
+		}
 
 		@include lg {
 			padding: 0 70px;
@@ -92,7 +95,6 @@
 	}
 
 	@include md {
-		height: 600px;
 		min-height: auto;
 	}
 
@@ -100,13 +102,11 @@
 	.swiper-btn-prev {
 		color: #000;
 		top: 95%;
-		
 
 		@include sm {
 			display: none;
 		}
 	}
-
 }
 
 .swiper {
@@ -158,8 +158,8 @@
 }
 
 .marketing {
-	position: absolute;
-	left: 50px;
+	position: fixed;
+	right: 50px;
 	bottom: 50px;
 	z-index: 10;
 	display: flex;
@@ -176,6 +176,7 @@
 
 	&__image {
 		flex-shrink: 0;
+		width: 100px;
 
 		img {
 			width: 100%;

@@ -17,9 +17,11 @@
 		<div class="site-container">
 			<header class="header">
 	<div class="container header__container">
+		<!-- ! add class = "burge--active" to trigger burger -->
 		<button class="burger btn-reset header__burger">
 			<span class="burger__line"></span>
 		</button>
+		<!-- ! add class = "nav--visible" to open sidebar nav-menu -->
 		<nav class="nav header__nav">
 			<ul class="nav__list">
 				<li class="nav__item">
@@ -32,8 +34,8 @@
 			<button class="nav__close btn-reset">close</button>
 		</nav>
 		<a href="/" class="logo header__logo" aria-label="logo">
-      <img src="../img/logo.png" alt="LOGO">
-    </a>
+			<img src="../img/logo.png" alt="LOGO" />
+		</a>
 		<ul class="shop-nav header__shop-nav">
 			<li class="shop-nav__item">
 				<form action="#" class="shop-nav__search-form search-form">
@@ -66,14 +68,15 @@
 	<div class="container hero__container">
 		<h1 class="visually-hidden">ServerSphere - best shop!</h1>
 		<div class="banner-slider">
-			<div class="swiper">
+			<div class="swiper-main">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<div class="hero__content">
 							<div class="hero__sliderText">
 								<h2 class="hero__title">Розпродаж потужних серверів</h2>
 								<p class="hero__descr">
-									Не пропусти фінальний розподаж / Безкоштовна доставка
+									Не пропусти фінальний розподаж / Безкоштовна доставка на
+									покупку від $100
 								</p>
 							</div>
 							<img
@@ -89,7 +92,8 @@
 							<div class="hero__sliderText">
 								<h2 class="hero__title">Розпродаж серверних комплектуючих</h2>
 								<p class="hero__descr">
-									Не пропусти фінальний розподаж / Безкоштовна доставка
+									Не пропусти фінальний розподаж / Безкоштовна доставка на
+									покупку від $100
 								</p>
 							</div>
 							<img
@@ -105,7 +109,8 @@
 							<div class="hero__sliderText">
 								<h2 class="hero__title">Розпродаж серверних стилажів</h2>
 								<p class="hero__descr">
-									Не пропусти фінальний розподаж / Безкоштовна доставка
+									Не пропусти фінальний розподаж / Безкоштовна доставка на
+									покупку від $100
 								</p>
 							</div>
 							<img
@@ -122,31 +127,31 @@
 				<div class="swiper-btn-next swiper-button-next"></div>
 			</div>
 		</div>
-		<div class="marketing">
-			<div class="marketing__image">
-				<img src="img/product-image.jpg" alt="product 1" />
-			</div>
-			<div class="marketing__text">
-				<span class="marketing__descr">Someone purchaed a</span>
-				<h3 class="marketing__title">Faux shearling double-breasted coat</h3>
-				<span class="marketing__when-from"
-					>15 minutes ago London, Great Britain</span
-				>
-			</div>
-			<button
-				class="btn-reset marketing__close"
-				aria-label="Close marketing block"
-			></button>
-		</div>
 	</div>
 </section>
+<!-- ! add class = "marketing--visible" to show message -->
+<div class="marketing">
+	<div class="marketing__image">
+		<img src="img/cpu_box_4.png" alt="product 1" />
+	</div>
+	<div class="marketing__text">
+		<span class="marketing__descr">Someone purchaed a</span>
+		<h3 class="marketing__title">CPU AMD Ryzen 9</h3>
+		<span class="marketing__when-from">15 хвилин тому</span>
+	</div>
+	<button
+		id="close-message-btn"
+		class="btn-reset marketing__close"
+		aria-label="Close marketing block"
+	></button>
+</div>
  <section class="banners">
   <h2 class="visually-hidden">Banners</h2>
   <div class="container banners__container">
     <ul class="banners__list">
       <li class="banners__item">
         <article class="banners__article banners-article banners-article--midseason">
-          <h3 class="banners-article__title">Сервера</h3>
+          <h3 class="banners-article__title">Сервери</h3>
           <a href="" class="main-link banners-article__link">Shop Now</a>
         </article>
       </li>
@@ -203,10 +208,10 @@
           </div>
           <h3 class="product__title">
             <a href="#">
-              Eye Mesh Boat Shoes
+              Artline Business T81 v01
             </a>
           </h3>
-          <span class="product__price">$220.00</span>
+          <span class="product__price">$1450.00</span>
         </article>
       </li>
       <li class="products-grid__item">
@@ -216,10 +221,10 @@
           </div>
           <h3 class="product__title">
             <a href="#">
-              Eye Mesh Boat Shoes
+              ASUS RF Business L-10
             </a>
           </h3>
-          <span class="product__price">$220.00</span>
+          <span class="product__price">$6220.00</span>
         </article>
       </li>
       <li class="products-grid__item">
@@ -229,10 +234,10 @@
           </div>
           <h3 class="product__title">
             <a href="#">
-              Eye Mesh Boat Shoes
+              Artline K-8570
             </a>
           </h3>
-          <span class="product__price">$220.00</span>
+          <span class="product__price">$4400.00</span>
         </article>
       </li>
       <li class="products-grid__item">
@@ -242,10 +247,10 @@
           </div>
           <h3 class="product__title">
             <a href="#">
-              Eye Mesh Boat Shoes
+              ARTLINE Business T85v10
             </a>
           </h3>
-          <span class="product__price">$220.00</span>
+          <span class="product__price">$8000.00</span>
         </article>
       </li>
       <li class="products-grid__item">
@@ -255,10 +260,10 @@
           </div>
           <h3 class="product__title">
             <a href="#">
-              Eye Mesh Boat Shoes
+              Asus TUF Gaming А-40M 
             </a>
           </h3>
-          <span class="product__price">$220.00</span>
+          <span class="product__price">$120.00</span>
         </article>
       </li>
       <li class="products-grid__item">
@@ -268,7 +273,7 @@
           </div>
           <h3 class="product__title">
             <a href="#">
-              Eye Mesh Boat Shoes
+              Asus MSI RS-330 AL 
             </a>
           </h3>
           <span class="product__price">$220.00</span>
@@ -281,10 +286,10 @@
           </div>
           <h3 class="product__title">
             <a href="#">
-              Eye Mesh Boat Shoes
+              Asus TUF Gaming B450M-Pro II
             </a>
           </h3>
-          <span class="product__price">$220.00</span>
+          <span class="product__price">$100.00</span>
         </article>
       </li>
       <li class="products-grid__item">
@@ -294,10 +299,10 @@
           </div>
           <h3 class="product__title">
             <a href="#">
-              Eye Mesh Boat Shoes
+              Asus TUF Gaming B550M-Plus
             </a>
           </h3>
-          <span class="product__price">$220.00</span>
+          <span class="product__price">$205.00</span>
         </article>
       </li>
       <li class="products-grid__item">
@@ -307,10 +312,10 @@
           </div>
           <h3 class="product__title">
             <a href="#">
-              Eye Mesh Boat Shoes
+              Кулер Noctua NH-D15S 
             </a>
           </h3>
-          <span class="product__price">$220.00</span>
+          <span class="product__price">$80.00</span>
         </article>
       </li>
       <li class="products-grid__item">
@@ -320,10 +325,10 @@
           </div>
           <h3 class="product__title">
             <a href="#">
-              Eye Mesh Boat Shoes
+              Dark Rock Pro 5
             </a>
           </h3>
-          <span class="product__price">$220.00</span>
+          <span class="product__price">$100.00</span>
         </article>
       </li>
 		</ul>
@@ -340,11 +345,11 @@
  <section class="shop-banners">
   <h2 class="visually-hidden">Banners</h2>
   <div class="container shop-banners__container">
-    <a href="#" class="shop-banners__banner shop-banner shop-banner--men">
+    <a href="/catalog.html" class="shop-banners__banner shop-banner shop-banner--men">
       <h3 class="shop-banner__title">Купуй найкращі сервери в збірці</h3>
       <span class="shop-banner__text main-link main-link--white">Read more</span>
     </a>
-    <a href="#" class="shop-banners__banner shop-banner shop-banner--women">
+    <a href="/catalog.html" class="shop-banners__banner shop-banner shop-banner--women">
       <h3 class="shop-banner__title">Збери сервер самостійно</h3>
       <span class="shop-banner__text main-link main-link--white">Read more</span>
     </a>
